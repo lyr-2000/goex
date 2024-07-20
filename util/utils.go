@@ -6,7 +6,7 @@ import (
 	"compress/gzip"
 	"encoding/json"
 	"github.com/google/uuid"
-	"github.com/nntaoli-project/goex/v2/model"
+	"github.com/lyr-2000/goex/v2/model"
 	"github.com/spf13/cast"
 	"io/ioutil"
 	"net/url"

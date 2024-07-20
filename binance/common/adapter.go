@@ -1,8 +1,8 @@
 package common
 
 import (
-	"github.com/nntaoli-project/goex/v2/logger"
-	"github.com/nntaoli-project/goex/v2/model"
+	"github.com/lyr-2000/goex/v2/logger"
+	"github.com/lyr-2000/goex/v2/model"
 	"net/url"
 )
 

@@ -13,10 +13,10 @@
 package main
 
 import (
-	goexv2 "github.com/nntaoli-project/goex/v2"
-	"github.com/nntaoli-project/goex/v2/logger"
-	"github.com/nntaoli-project/goex/v2/model"
-	"github.com/nntaoli-project/goex/v2/options"
+	goexv2 "github.com/lyr-2000/goex/v2"
+	"github.com/lyr-2000/goex/v2/logger"
+	"github.com/lyr-2000/goex/v2/model"
+	"github.com/lyr-2000/goex/v2/options"
 	"log"
 )
 
