@@ -5,6 +5,7 @@ type UriOptions struct {
 	TickerUri                string
 	DepthUri                 string
 	KlineUri                 string
+	KlineUriHistory  		 string
 	GetOrderUri              string
 	GetPendingOrdersUri      string
 	GetHistoryOrdersUri      string

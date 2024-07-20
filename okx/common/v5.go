@@ -3,11 +3,13 @@ package common
 import (
 	"encoding/json"
 	. "github.com/lyr-2000/goex/v2/options"
+	slog "log/slog"
 )
 
 type OKxV5 struct {
 	UriOpts       UriOptions
 	UnmarshalOpts UnmarshalerOptions
+	Logger   slog.Logger
 }
 
 type BaseResp struct {
@@ -27,9 +29,11 @@ func New() *OKxV5 {
 	unmarshaler := new(RespUnmarshaler)
 
 	f := &OKxV5{
+		Logger: *slog.Default(),
 		UriOpts: UriOptions{
 			Endpoint:                 "https://www.okx.com",
 			KlineUri:                 "/api/v5/market/candles",
+			KlineUriHistory:                 "/api/v5/market/history-candles",
 			TickerUri:                "/api/v5/market/ticker",
 			DepthUri:                 "/api/v5/market/books",
 			NewOrderUri:              "/api/v5/trade/order",

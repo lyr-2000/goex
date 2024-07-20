@@ -110,6 +110,9 @@ type Kline struct {
 	High      float64      `json:"h"`
 	Low       float64      `json:"l"`
 	Vol       float64      `json:"v"`
+	VolCcy  string `json:"volCcy"`
+	VolCcyQuote string `json:"volCcyQuote"`
+	Confirm  string `json:"confirm"`
 }
 
 type Order struct {
